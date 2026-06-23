@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmuhil P | AI & Data Science Portfolio</title>
+    <meta name="description" content="Personal portfolio of Karmuhil P, an Artificial Intelligence & Data Science student. Exploring machine learning, web technologies, and human-computer interaction.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Interactive Neural Network Canvas Background -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-symbol">&lt;</span>
+                <span class="logo-text">Muhil.AI</span>
+                <span class="logo-symbol">&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-nav">Hire Me</a>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container-grid">
+                <div class="hero-content">
+                    <div class="hero-badge reveal">
+                        <span class="badge-icon">🤖</span>
+                        <span>AI & Data Science Student</span>
+                    </div>
+                    <h1 class="hero-title reveal">
+                        Hi, I'm <span class="gradient-text">Karmuhil P</span>
+                    </h1>
+                    <h2 class="hero-subtitle reveal">
+                        I build <span class="txt-rotate" data-period="2000" data-rotate='[ "Intelligent Solutions.", "Interactive Web Apps.", "Predictive Models.", "User-Centric Interfaces." ]'></span>
+                    </h2>
+                    <p class="hero-description reveal">
+                        Passionate about artificial intelligence, modern web design, and human-computer interactions. Bridging the gap between data-driven algorithms and beautiful user experiences.
+                    </p>
+                    <div class="hero-cta reveal">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links reveal">
+                        <a href="https://github.com/muhil-06" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karmuhilpandiyan-7a56622a1/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:karmuhilpandiyan17@gmail.com" class="social-icon" aria-label="Email">
+                            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-area reveal">
+                    <div class="hero-img-backdrop-glow"></div>
+                    <div class="hero-img-frame">
+                        <img src="profile.jpg" alt="Karmuhil P" class="hero-profile-img">
+                    </div>
+                    <!-- Abstract floating tech badges -->
+                    <div class="floating-tech-card ftc-1">
+                        <span class="ftc-icon">🤖</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div class="floating-tech-card ftc-2">
+                        <span class="ftc-icon">💻</span>
+                        <span>Full Stack Web</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                    <span class="arrow"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info card reveal">
+                        <div class="card-glow"></div>
+                        <h3 class="card-title">Professional Path</h3>
+                        <p class="objective-text">
+                            "Artificial Intelligence and Data Science student with a passion for technology, innovation, and continuous learning. Interested in exploring emerging technologies, solving real-world problems, and building practical solutions through projects and collaborative experiences."
+                        </p>
+                        
+                        <div class="personal-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Location:</span>
+                                <span class="detail-value">Coimbatore, Tamil Nadu, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Email:</span>
+                                <span class="detail-value"><a href="mailto:karmuhilpandiyan17@gmail.com">karmuhilpandiyan17@gmail.com</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Phone:</span>
+                                <span class="detail-value"><a href="tel:+916374070922">+91 6374070922</a></span>
+                            </div>
+                        </div>
+
+                        <h4 class="sub-heading">Areas of Interest</h4>
+                        <div class="interests-tags">
+                            <span class="tag interest-tag">Machine Learning</span>
+                            <span class="tag interest-tag">Data Analytics</span>
+                            <span class="tag interest-tag">DBMS</span>
+                            <span class="tag interest-tag">Operating Systems</span>
+                            <span class="tag interest-tag">Human-Computer Interaction</span>
+                        </div>
+                    </div>
+
+                    <div class="education-timeline reveal">
+                        <h3 class="card-title timeline-section-title">Education</h3>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item card">
+                                <div class="card-glow"></div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2023 - Present</span>
+                                    <h4 class="education-degree">B.Tech - Artificial Intelligence & Data Science</h4>
+                                    <p class="education-inst">DR.N.G.P Institute of Technology</p>
+                                    <div class="score-badge">CGPA: 7.84 <span class="score-scale">(Upto 5th Semester)</span></div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item card">
+                                <div class="card-glow"></div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2022 - 2023</span>
+                                    <h4 class="education-degree">Higher Secondary Certificate (HSC)</h4>
+                                    <p class="education-inst">London Krishnamoorthi Matric Hr.Sec.School</p>
+                                    <div class="score-badge">Percentage: 82.16%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card card reveal">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <div class="category-icon-wrapper purple-glow">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <h3 class="category-title">Programming</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skill-category-card card reveal">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <div class="category-icon-wrapper cyan-glow">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <h3 class="category-title">Web Technologies</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 70%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 / CSS3</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category-card card reveal">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <div class="category-icon-wrapper green-glow">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                            </div>
+                            <h3 class="category-title">Tools & Platforms</h3>
+                        </div>
+                        <div class="skills-tags-container">
+                            <span class="tag skill-tag">Git</span>
+                            <span class="tag skill-tag">GitHub</span>
+                            <span class="tag skill-tag">VS Code</span>
+                            <span class="tag skill-tag">Google Colab</span>
+                            <span class="tag skill-tag">PowerPoint</span>
+                        </div>
+                    </div>
+
+                    <!-- Core Competencies -->
+                    <div class="skill-category-card card reveal">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <div class="category-icon-wrapper gold-glow">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                            <h3 class="category-title">Core Competencies</h3>
+                        </div>
+                        <div class="skills-tags-container">
+                            <span class="tag competence-tag">Team Work</span>
+                            <span class="tag competence-tag">Effective Communication</span>
+                            <span class="tag competence-tag">Critical Thinking</span>
+                            <span class="tag competence-tag">Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Filters -->
+                <div class="filter-tabs reveal">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="ai-ml">AI & ML</button>
+                    <button class="filter-tab" data-filter="web">Web Dev</button>
+                    <button class="filter-tab" data-filter="hardware">IoT & Systems</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Landslide Detection -->
+                    <div class="project-card card reveal" data-category="hardware">
+                        <div class="card-glow"></div>
+                        <div class="project-image-placeholder purple-gradient-bg">
+                            <svg viewBox="0 0 24 24" class="project-art" width="60" height="60" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            <span class="project-year-badge">2024-2025</span>
+                        </div>
+                        <div class="project-details-content">
+                            <h3 class="project-title">Landslide Detection System</h3>
+                            <p class="project-summary">
+                                A real-time landslide monitoring system leveraging multi-sensor telemetry data acquisition and wireless network nodes.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">IoT</span>
+                                <span class="tag">Wireless Comm</span>
+                                <span class="tag">Sensors</span>
+                                <span class="tag">Anomaly Detection</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-secondary btn-sm open-modal-btn" data-modal="modal-landslide">Learn More</button>
+                                <a href="https://github.com/muhil-06/Landslide_Detection.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Project Link">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AI Tutor -->
+                    <div class="project-card card reveal" data-category="ai-ml web">
+                        <div class="card-glow"></div>
+                        <div class="project-image-placeholder cyan-gradient-bg">
+                            <svg viewBox="0 0 24 24" class="project-art" width="60" height="60" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 7.54 16.59l-1.07-1.07A8.5 8.5 0 0 0 12 3.5v1.75a6.75 6.75 0 0 1 3.86 11.23l-1.07-1.07A5 5 0 0 0 12 7v1.75c1 0 1.95.4 2.65 1.1l-1.07 1.07A1.5 1.5 0 0 0 12 10.5v11c5.52 0 10-4.48 10-10S17.52 2 12 2z"></path><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2"></path></svg>
+                            <span class="project-year-badge">Jan 2026</span>
+                        </div>
+                        <div class="project-details-content">
+                            <h3 class="project-title">AI Tutor Platform</h3>
+                            <p class="project-summary">
+                                An adaptive educational platform driven by LLM agents, catering explanations to custom student cognitive profiles.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React.js</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">OpenAI API</span>
+                                <span class="tag">Spaced Repetition</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-secondary btn-sm open-modal-btn" data-modal="modal-tutor">Learn More</button>
+                                <a href="https://github.com/muhil-06/ai-tutor.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Project Link">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Smart Resume Screening -->
+                    <div class="project-card card reveal" data-category="ai-ml web">
+                        <div class="card-glow"></div>
+                        <div class="project-image-placeholder gold-gradient-bg">
+                            <svg viewBox="0 0 24 24" class="project-art" width="60" height="60" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            <span class="project-year-badge">Apr 2026</span>
+                        </div>
+                        <div class="project-details-content">
+                            <h3 class="project-title">Smart Resume Screening</h3>
+                            <p class="project-summary">
+                                An intelligent recruiter workflow dashboard that scores resumes, highlights skill gaps, and ranks candidates using AI.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JS</span>
+                                <span class="tag">Claude AI</span>
+                                <span class="tag">Parsing</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-secondary btn-sm open-modal-btn" data-modal="modal-resume">Learn More</button>
+                                <a href="https://github.com/muhil-06/Smart-Resume-Screening-System.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Project Link">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience, Achievements & Certifications -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Experience & Achievements</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="exp-grid">
+                    <!-- Left: Internship & Certifications -->
+                    <div class="exp-col reveal">
+                        <div class="timeline-group">
+                            <h3 class="col-heading-title">Professional Experience</h3>
+                            <div class="exp-item card">
+                                <div class="card-glow"></div>
+                                <span class="exp-period">June 2025 (15 Days)</span>
+                                <h4 class="exp-role">Web Development Intern</h4>
+                                <h5 class="exp-company">Top Tech Developers</h5>
+                                <p class="exp-desc">
+                                    Gained hands-on experience building fully responsive web layouts using HTML5 and CSS3. Focused on high-fidelity designs, semantic layouts, and front-end interface development best practices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="certs-group">
+                            <h3 class="col-heading-title">NPTEL Certifications</h3>
+                            
+                            <div class="cert-item card">
+                                <div class="card-glow"></div>
+                                <div class="cert-header">
+                                    <span class="cert-date">April 2026</span>
+                                    <h4 class="cert-name">Human Computer Interaction <span class="honor">(Elite + Gold)</span></h4>
+                                </div>
+                                <p class="cert-desc">Covered principles of usability, interactive digital interface design paradigms, and human-cognitive modeling in software feedback loops.</p>
+                            </div>
+
+                            <div class="cert-item card">
+                                <div class="card-glow"></div>
+                                <div class="cert-header">
+                                    <span class="cert-date">December 2025</span>
+                                    <h4 class="cert-name">Design and Implementation of Human Computer Interfaces</h4>
+                                </div>
+                                <p class="cert-desc">Explored UX prototyping lifecycles, user-centric wireframes, empirical usability testing evaluations, and interface layouts.</p>
+                            </div>
+
+                            <div class="cert-item card">
+                                <div class="card-glow"></div>
+                                <div class="cert-header">
+                                    <span class="cert-date">April 2025</span>
+                                    <h4 class="cert-name">Privacy & Security in Online Social Media</h4>
+                                </div>
+                                <p class="cert-desc">Acquired understanding of data vulnerabilities, system threat surfaces, user profile privacy configurations, and cybersecurity practices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Hackathons & Activities -->
+                    <div class="ach-col reveal">
+                        <h3 class="col-heading-title">Key Milestones & Co-curriculars</h3>
+                        
+                        <div class="milestone-card card">
+                            <div class="card-glow"></div>
+                            <div class="milestone-header">
+                                <span class="milestone-icon">🏆</span>
+                                <div class="milestone-titles">
+                                    <h4 class="milestone-name">AI Precision Agriculture Hackathon</h4>
+                                    <span class="milestone-location">Karpagam College of Engineering | 2026</span>
+                                </div>
+                            </div>
+                            <p class="milestone-desc">Formulated machine learning predictive pipelines for crop optimization and weather-related sensor telemetry alerts.</p>
+                        </div>
+
+                        <div class="milestone-card card">
+                            <div class="card-glow"></div>
+                            <div class="milestone-header">
+                                <span class="milestone-icon">🤖</span>
+                                <div class="milestone-titles">
+                                    <h4 class="milestone-name">FIREBIRD-V Robotics Session</h4>
+                                    <span class="milestone-location">Two-Day Hands-on Training | 2024</span>
+                                </div>
+                            </div>
+                            <p class="milestone-desc">Explored hardware architecture, embedded C programming, and low-level sensory feedback integration on Firebird-V mobile robotics platforms.</p>
+                        </div>
+
+                        <div class="milestone-card card">
+                            <div class="card-glow"></div>
+                            <div class="milestone-header">
+                                <span class="milestone-icon">⚡</span>
+                                <div class="milestone-titles">
+                                    <h4 class="milestone-name">"Free Energy Charger" Paper Presentation</h4>
+                                    <span class="milestone-location">CIT Symposium | 2023</span>
+                                </div>
+                            </div>
+                            <p class="milestone-desc">Compiled research paper advocating wireless renewable battery chargers to minimize baseline energy grid requirements.</p>
+                        </div>
+
+                        <div class="milestone-card card">
+                            <div class="card-glow"></div>
+                            <h4 class="sub-heading-small">Leadership & Social Responsibility</h4>
+                            <ul class="activities-list">
+                                <li>
+                                    <span class="list-bullet">•</span>
+                                    <span><strong>Active NSS Volunteer:</strong> Coordinating community social services, rural outreach programs, and medical camp awareness drives.</span>
+                                </li>
+                                <li>
+                                    <span class="list-bullet">•</span>
+                                    <span><strong>Symposium Volunteer:</strong> Managing registrations, crowd control, and technical event scheduling during college national symposiums.</span>
+                                </li>
+                                <li>
+                                    <span class="list-bullet">•</span>
+                                    <span><strong>Cultural Engagement:</strong> Participated in group dance presentations in college annual cultural festivals, showcasing teamwork.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel reveal">
+                        <h3 class="panel-heading">Let's Connect</h3>
+                        <p class="panel-subtext">Whether you want to discuss AI trends, check out my research, or discuss project collaborations, feel free to drop a message!</p>
+                        
+                        <div class="contact-cards-container">
+                            <a href="mailto:karmuhilpandiyan17@gmail.com" class="contact-card card">
+                                <div class="card-glow"></div>
+                                <div class="contact-card-icon-wrapper mail-color">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="contact-card-details">
+                                    <span class="contact-card-label">Email Me</span>
+                                    <span class="contact-card-value">karmuhilpandiyan17@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+916374070922" class="contact-card card">
+                                <div class="card-glow"></div>
+                                <div class="contact-card-icon-wrapper phone-color">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="contact-card-details">
+                                    <span class="contact-card-label">Call Me</span>
+                                    <span class="contact-card-value">+91 6374070922</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-card card">
+                                <div class="card-glow"></div>
+                                <div class="contact-card-icon-wrapper loc-color">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="contact-card-details">
+                                    <span class="contact-card-label">Location</span>
+                                    <span class="contact-card-value">Coimbatore, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel card reveal">
+                        <div class="card-glow"></div>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                                <span class="input-focus-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="yourname@domain.com" required>
+                                <span class="input-focus-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Collaboration / Inquiry" required>
+                                <span class="input-focus-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Write your message here..." required></textarea>
+                                <span class="input-focus-line"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit">
+                                <span class="btn-text">Send Message</span>
+                                <svg class="btn-icon send-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Karmuhil P. All rights reserved.</p>
+            <p class="tech-stack">Built with HTML5, CSS3, &amp; Vanilla JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Modals for Project Deep Dives -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+
+    <!-- Landslide Detection Modal -->
+    <div class="project-modal card" id="modal-landslide">
+        <button class="modal-close" aria-label="Close Modal">&times;</button>
+        <div class="modal-scroll-body">
+            <h3 class="modal-title gradient-text">Landslide Detection System</h3>
+            <div class="modal-meta">
+                <span class="modal-tag">IoT</span>
+                <span class="modal-tag">Wireless Communication</span>
+                <span class="modal-tag">Sensors</span>
+                <span class="modal-tag">Terrain Monitoring</span>
+            </div>
+            
+            <div class="modal-content-grid">
+                <div class="modal-text">
+                    <h4 class="modal-section-title">Overview</h4>
+                    <p>Designed and developed an end-to-end telemetry acquisition and alert architecture configured for terrain stability monitoring. Natural disaster zones require continuous tracking to prevent casualties and allow pre-emptive evacuations.</p>
+                    
+                    <h4 class="modal-section-title">Key Features</h4>
+                    <ul class="modal-list">
+                        <li><strong>Multi-Sensor Fusion:</strong> Integrates accelerometer, gyroscopic tilt metrics, and moisture telemetry to calculate aggregate landslide coefficients.</li>
+                        <li><strong>Anomaly Recognition:</strong> Implemented terrain displacement thresholds to analyze shifting acceleration trends.</li>
+                        <li><strong>Wireless Comms:</strong> Configured transceivers to transmit metrics from critical zones back to local monitoring base units.</li>
+                        <li><strong>Early Warning Alerts:</strong> Auto-triggers real-time warnings whenever terrain shifts exceed baseline safety thresholds.</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-specs">
+                    <div class="spec-card">
+                        <span class="spec-label">Timeline</span>
+                        <span class="spec-value">2024 - 2025</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Role</span>
+                        <span class="spec-value">Lead Systems Developer</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Hardware & Stack</span>
+                        <span class="spec-value">Python, Telemetry Sensors, Wireless Nodes</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Code Repository</span>
+                        <a href="https://github.com/muhil-06/Landslide_Detection.git" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-block">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Tutor Modal -->
+    <div class="project-modal card" id="modal-tutor">
+        <button class="modal-close" aria-label="Close Modal">&times;</button>
+        <div class="modal-scroll-body">
+            <h3 class="modal-title gradient-text">AI Tutor</h3>
+            <div class="modal-meta">
+                <span class="modal-tag">React.js</span>
+                <span class="modal-tag">Node.js</span>
+                <span class="modal-tag">OpenAI APIs</span>
+                <span class="modal-tag">Adaptive Learning</span>
+            </div>
+            
+            <div class="modal-content-grid">
+                <div class="modal-text">
+                    <h4 class="modal-section-title">Overview</h4>
+                    <p>An AI-powered learning workspace designed to democratize customized tutoring. By creating custom student cognitive profiles, the app adaptively clarifies complex concepts on demand.</p>
+                    
+                    <h4 class="modal-section-title">Key Features</h4>
+                    <ul class="modal-list">
+                        <li><strong>Adaptive Explanations:</strong> Leverages LLM prompting protocols via OpenAI APIs to deliver concepts matching student academic status (e.g., visual analogies, code scripts, mathematical proofs).</li>
+                        <li><strong>Spaced Repetition Engine:</strong> Tracks recall accuracy and customizes optimal flashcard review schedules to improve retention efficiency.</li>
+                        <li><strong>Contextual Recommendations:</strong> Analyzes test answers to recommend targeted knowledge paths and modules.</li>
+                        <li><strong>Responsive Dashboard:</strong> A interactive React layout presenting visual progress timelines, review trackers, and study stats.</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-specs">
+                    <div class="spec-card">
+                        <span class="spec-label">Timeline</span>
+                        <span class="spec-value">January 2026</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Role</span>
+                        <span class="spec-value">Fullstack Developer</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Technologies</span>
+                        <span class="spec-value">React.js, Node.js, Express, OpenAI API, CSS Grid</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Code Repository</span>
+                        <a href="https://github.com/muhil-06/ai-tutor.git" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-block">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Smart Resume Screening Modal -->
+    <div class="project-modal card" id="modal-resume">
+        <button class="modal-close" aria-label="Close Modal">&times;</button>
+        <div class="modal-scroll-body">
+            <h3 class="modal-title gradient-text">Smart Resume Screening System</h3>
+            <div class="modal-meta">
+                <span class="modal-tag">HTML & CSS</span>
+                <span class="modal-tag">JavaScript</span>
+                <span class="modal-tag">Claude AI</span>
+                <span class="modal-tag">Recruiter Dashboard</span>
+            </div>
+            
+            <div class="modal-content-grid">
+                <div class="modal-text">
+                    <h4 class="modal-section-title">Overview</h4>
+                    <p>A web dashboard developed to assist HR personnel in parsing and prioritizing candidate applications. Built using Claude AI, it drastically reduces manual resume vetting bottlenecks.</p>
+                    
+                    <h4 class="modal-section-title">Key Features</h4>
+                    <ul class="modal-list">
+                        <li><strong>Candidate Scoring:</strong> Cross-references resume file text against target job descriptions to compute compatibility ratings.</li>
+                        <li><strong>Skill-Gap Isolation:</strong> Pinpoints missing tool competencies, required frameworks, or certifications between candidates and active job descriptions.</li>
+                        <li><strong>Interactive Rankings:</strong> Sorts and displays profiles on an active analytics dashboard, highlighting top candidates.</li>
+                        <li><strong>Secure Local Execution:</strong> Leverages client-side script validation for rapid text extraction.</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-specs">
+                    <div class="spec-card">
+                        <span class="spec-label">Timeline</span>
+                        <span class="spec-value">April 2026</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Role</span>
+                        <span class="spec-value">Frontend & API Integrator</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Technologies</span>
+                        <span class="spec-value">JavaScript (ES6), HTML5, CSS3, Claude API</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label">Code Repository</span>
+                        <a href="https://github.com/muhil-06/Smart-Resume-Screening-System.git" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-block">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
